@@ -1,0 +1,44 @@
+<?php
+require_once("connection.php");
+?>
+
+
+<?php
+try{
+	$conn = new PDO($DBCONNSTRING, $username, $password);
+	$conn ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$amount = $_POST["amount"];
+	$zip = $_POST["zip"];
+
+	if (isset($name) && isset($email) && isset($amount) && isset($zip)){
+		if (!empty($name) &&  !empty($email) && !empty($amount) && !empty($zip)){
+			$s = "SELECT * FROM donation WHERE email = '$email'";
+			$res = $conn -> query($s);
+			$fetching = $res ->fetch();
+			if (!$fetching){
+				$q="INSERT INTO donation VALUES ('$name','$email','$amount','$zip')";
+				$conn->exec($q);
+				echo "<b style='font-size:30px;'>Thank you for Donating $name<b><a href='index.php'>Homepage<a/><br>";
+				echo "<img src='images/gif.webp'>";	
+			}
+			else{
+				$q="INSERT INTO donation VALUES ('$name','$email','$amount','$zip')";
+				$conn->exec($q);
+				echo "<b style='font-size:30px;text-align:center;'>Thank you for Donating Again $name<b><a href='index.php'>Homepage<a/><br>";
+				echo "<iframe src='https://giphy.com/embed/wMY3LjQQMqo5W' width='480' height='270' frameBorder='0' class='giphy-embed' allowFullScreen></iframe>";	
+			}
+		}
+		
+	}
+
+}
+catch (PDOException $e){
+	echo "Failed to connect to the database";
+	die($e->getmessage());
+}
+
+
+
+?>

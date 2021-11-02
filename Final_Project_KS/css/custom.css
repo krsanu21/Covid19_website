@@ -1,0 +1,71 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  height: 100vh;
+  width: 100%;
+}
+
+.mainHeaderWrapper {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.leftSide {
+  box-shadow: 0 0 3px #2d2d2d;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.rightSide {
+  /* padding: 2rem; */
+}
+
+.secondInfoCard {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 4rem;
+}
+.secondInfoCardBtn {
+  text-align: left;
+}
+#abc {
+  background-image: url(../images/coronavirus.jpg);
+  background-size: cover;
+  background-position: center;
+  color: red;
+}
+#services {
+  font-family: "Times New Roman", Times, serif;
+  background-image: url(../images/coronavirus.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.donate {
+  background-image: url(../images/donate_cover.jpg);
+}
+.videos {
+  align-items: center;
+}
+.any {
+  padding-top: 6rem;
+  padding-left: 2rem;
+}
+.firstvid {
+  padding-left: 4rem;
+}
+
+.btn .shop{
+  padding: 5px 10px;
+}
+.secondInfoCardBtn{
+  padding: 5px 10px;
+}
+
+@media only screen and (max-width: 50px){
+  .top-line{
+    margin-top: 100px;
+  }
+}
+

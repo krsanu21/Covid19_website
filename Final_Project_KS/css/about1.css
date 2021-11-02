@@ -1,0 +1,51 @@
+h4{
+	text-align: center;
+	font-size: 30px;
+}
+.phone{
+	text-align: center;
+}
+.email {
+	text-align: center;
+}
+textarea{
+	border: 5px solid grey;
+	margin-top: 20px;
+}
+.map{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+form{
+	text-align: center;
+}
+.num{
+	font-size: 25px;
+	margin-top: 30px;
+}
+.em{
+	font-size: 25px;
+	margin-top: 30px;
+	
+}
+.enter{
+	padding: 10px 20px;
+	background-color: grey;
+}
+.logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 80px;
+	width: 80px;
+
+}
+body{
+	background-color: #e0ddcfff;
+}
+.image{
+	height: 30px;
+	width: 30px;
+}

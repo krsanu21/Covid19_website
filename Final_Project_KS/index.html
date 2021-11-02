@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 Info</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/yeti/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+    <link rel="icon" type="image" href="images/android-chrome-512x512.png">
+  </head>
+  <body>
+    <nav class="nav-bar" >
+      <a href="./index.php"><img src="images/logo.png"></a>
+      <div class="menu">
+        <span onClick="myFunction()">&#9776;</span>
+        <ul id="nav-links" >
+          <li>
+            <a href="./index.php">Home</a>
+          </li>
+          <li>
+            <a href="./about.php">About</a>
+          </li>
+          <li>
+            <a href="./services.php">Services</a>
+          </li>
+          <li>
+            <a href="./shop.php">Shop</a>
+          </li>
+          <li>
+            <a href="./contact_us.php">Contact Us</a>
+          </li>
+      </ul> 
+      </div>
+      
+    </nav>
+    
+    
+
+
+    <main role="main">
+      <div class="jumbotron mb-0" id="abc">
+        <div class="container-fluid">
+          <h1 class="display-3" style="color: white;">What is Coronavirus?</h1>
+          <p style="color: white; font-size: medium;">
+            Coronaviruses are a type of virus. There are many different kinds,
+            and some cause disease. A newly identified coronavirus, SARS-CoV-2,
+            has caused a worldwide pandemic of respiratory illness, called
+            COVID-19.
+          </p>
+          <p>
+            <a
+              class="btn btn-primary btn-lg"
+              href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"
+              role="button"
+              >Learn more &raquo;</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="w-100 secondInfoCard">
+        <div class="mb-2">
+          <p style="font-size: large;">
+            According to the Centers for Disease Control and Prevention (CDC),
+            <b>wearing a mask in public</b>, maintaining physical distance and
+            washing your hands are the best ways to help prevent the spread of
+            COVID-19. COVID-19 can be spread by tiny droplets that get into the
+            air when we cough, sneeze or even laugh or talk. Social distancing
+            limits the risk of exposure to those droplets. Wearing a mask also
+            can help contain the droplets you emit.
+            <b>Buy Masks and Sanitizers from COVID-19 Info</b> now to protect
+            yourself and others around you from this deadly virus.
+          </p>
+        </div>
+
+        <a
+          href="shop.php"
+          class="secondInfoCardBtn btn btn-md btn-primary text-left"
+          id="shop">Shop Now</a
+        >
+      </div>
+
+      <div class="container-fluid mt-4">
+        <div class="row">
+          <div class="col-6 pr-5">
+            <div class="leftSide donate">
+              <h3>Make a Donation Now</h3>
+              <form action="index1php.php" class="row" method="post">
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  class="col-12 mb-4"
+                  name="name" required
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="col-12 mb-4"
+                  name="email" required
+                />
+                <input
+                  type="number"
+                  placeholder="Amount"
+                  class="col-12 mb-4 "
+                  name="amount" required
+                />
+
+                <input type="text" placeholder="ZIP" class="col-12 mb-4"name="zip" required/>
+                <button type="submit" class="btn btn-lg btn-success" name="action" id="donbutton">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-6 pl-5">
+            <div class="rightSide">
+              <h3 class="text-center pb-2 display-3">
+                Statistics
+              </h3>
+              <div class="row text-center mb-4">
+                <div class="col-md-4 col-sm-12">
+                  <p class="font-weight-bold display-4">68.1M</p>
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                      <p>Total Cases</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <p class="font-weight-bold display-4">43.9M</p>
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                      <p>Recovered Cases</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <p class="font-weight-bold display-4">1.56M</p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>Deaths</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-4">
+                  <a
+                    href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/index.html"
+                    class="btn btn-lg btn-primary"
+                    >More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container-fluid">
+      <p>Kumar Sanu &copy; CS 3500</p>
+    </footer>
+
+    <script type="text/javascript">
+      document.getElementById("shop").addEventListener("mouseover", mouseover_s);
+      document.getElementById("shop").addEventListener("mouseout", mouseout_s);
+      function mouseover_s(){
+        document.getElementById("shop").style.padding = "10px 20px";
+      }
+
+      function mouseout_s(){
+        document.getElementById("shop").style.padding = "5px 10px";
+      }
+      document.getElementById("donbutton").addEventListener("mouseover", mouseover_d);
+      document.getElementById("donbutton").addEventListener("mouseout", mouseout_d);
+      function mouseover_d(){
+        document.getElementById("donbutton").style.padding = "10px 20px";
+      }
+
+      function mouseout_d(){
+        document.getElementById("donbutton").style.padding = "5px 10px";
+      }
+
+    </script>
+    
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
+
+
