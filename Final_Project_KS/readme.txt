@@ -1,11 +1,5 @@
 Name: Kumar Sanu
 URL: https://intensifying-kills.000webhostapp.com
-000webhost: email- krsanu06@gmail.com
-password - My_web123
-db_name: id15629655_my_db
-db_host: localhost
-db_user: id15629655_krsanu06
-db_password: My_website_21
 
 index.php - Homepage/Landing page of my website
 
